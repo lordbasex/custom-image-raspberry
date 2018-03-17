@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=ladie
+Description=LADIE
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/ladie
+ScriptFile=/usr/share/plymouth/themes/ladie/ladie.script
