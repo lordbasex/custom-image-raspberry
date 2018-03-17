@@ -24,7 +24,7 @@ cd ladie
 mv pix.plymouth ladie.plymouth
 mv pix.script ladie.script
 rm splash.png
-wget http://example.com/images/splash.png
+wget --no-check-certificate https://raw.githubusercontent.com/lordbasex/custom-image-raspberry/master/plymouth/ladie/splash.png -O /usr/share/plymouth/themes/ladie/splash.png 
 sed -i 's/pix/ladie/g; s/Raspberry Pi/My/g' ladie.plymouth
 sed -i 's/pix/ladie/g' /etc/plymouth/plymouthd.conf
 ```
