@@ -56,7 +56,7 @@ Another option is to download the already modified file.
 wget https://raw.githubusercontent.com/lordbasex/custom-image-raspberry/master/openbox/rc.xml -O/etc/X11/openbox/rc.xml
 ```
 ## AutoRum
-We add in the file /etc/X11/openbox/autorun at the end of the last line the name of the command with the path where it is found and then we will set it to & to run in the background. In this example the command is called ladie is in the directory /home/pi/
+We add in the file /etc/X11/openbox/autorun at the end of the last line the name of the command with the path of where it is and then we add an & to run in the background. In this example the command is called ladie is in the /home/pi/ directory
 
 ```bash 
 vim /etc/X11/openbox/autorun
