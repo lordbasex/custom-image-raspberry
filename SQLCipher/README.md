@@ -60,6 +60,7 @@ Run your test code
 ## More Doc
 
 ```
+https://coolaj86.com/articles/building-sqlcipher-for-node-js-on-raspberry-pi-2/
 https://thejeshgn.com/2014/12/09/sqlcipher-for-encrypted-sqlite-database/
 https://discuss.zetetic.net/t/c-project-building-with-dynamically-compiled-sqlcipher/331/2
 ```
