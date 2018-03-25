@@ -35,8 +35,8 @@ ENDLINE
 
 ## Custom OpenBox
 
-Remove all tags <item .. </ item>
-With this we will deactivate the default menu. or download the file already modified.
+Edit with the vim command the file /etc/X11/openbox/menu.xml remove all the tags <item .. </ item> Or download the file already modified.
+With this we will deactivate the default menu.
 
 ```bash
 wget https://raw.githubusercontent.com/lordbasex/custom-image-raspberry/master/openbox/menu.xml -O /etc/X11/openbox/menu.xml
