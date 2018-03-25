@@ -49,7 +49,7 @@ To eliminate the frame of the window which has: title, minimize and maximize but
 <decor>no</decor>
 </application>
 ```
-Note: in the application tag the name has to be the name of the binary that we are going to execute to eliminate the frames and buttons.
+Note: in the application tag the name has to be the name of the binary that we are going to execute to eliminate the frames and buttons. In this example the name of the application is ladie
 
 Another option is to download the already modified file
 ```bash
