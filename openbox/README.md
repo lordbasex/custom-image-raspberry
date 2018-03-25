@@ -41,7 +41,21 @@ With this we will deactivate the default menu.
 ```bash
 wget https://raw.githubusercontent.com/lordbasex/custom-image-raspberry/master/openbox/menu.xml -O /etc/X11/openbox/menu.xml
 ```
-nano /etc/X11/openbox/rc.xml
+
+To eliminate the frame of the window which has: title, minimize and maximize buttons you have to add some lines in the file /etc/X11/openbox/rc.xml in line 658
+
+```bash
+<application name="ladie">
+<decor>no</decor>
+</application>
+```
+Note: in the application tag the name has to be the name of the binary that we are going to execute to eliminate the frames and buttons.
+
+Another option is to download the already modified file
+```bash
+wget https://raw.githubusercontent.com/lordbasex/custom-image-raspberry/master/openbox/rc.xml -O/etc/X11/openbox/rc.xml
+```
+
 vim /etc/X11/openbox/autorun
 
 
