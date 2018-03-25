@@ -1,1 +1,52 @@
-README.md
+# Raspbian Stretch Lite - Custom OpenBox
+
+Lord BaseX (c) 2018
+ Federico Pereira <fpereira@cnsoluciones.com>
+
+This code is distributed under the GNU LGPL v3.0 license.
+
+
+
+## Installation Packages
+
+
+```bash
+apt -y install openbox
+apt -y install --no-install-recommends xserver-xorg
+apt -y install --no-install-recommends xinit
+```
+
+Create file to initialize openbox at startup.
+
+```bash
+cat > /etc/systemd/system/openbox.service <<ENDLINE
+[Unit]
+Description=Server X
+DefaultDependencies=no
+After=getty.target
+
+[Service]
+ExecStart=/usr/bin/startx
+
+[Install]
+ENDLINE
+```
+
+
+## Custom OpenBox
+
+Remove all tags <item .. </ item>
+With this we will deactivate the default menu. or download the file already modified.
+
+```bash
+wget https://raw.githubusercontent.com/lordbasex/custom-image-raspberry/master/openbox/menu.xml -O /etc/X11/openbox/menu.xml
+```
+nano /etc/X11/openbox/rc.xml
+vim /etc/X11/openbox/autorun
+
+
+## More Doc
+
+```
+https://wiki.archlinux.org/index.php/Openbox
+```
