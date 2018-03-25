@@ -53,7 +53,7 @@ Note: in the application tag the name has to be the name of the binary that we a
 
 Another option is to download the already modified file.
 ```bash
-wget https://raw.githubusercontent.com/lordbasex/custom-image-raspberry/master/openbox/rc.xml -O/etc/X11/openbox/rc.xml
+wget https://raw.githubusercontent.com/lordbasex/custom-image-raspberry/master/openbox/rc.xml -O /etc/X11/openbox/rc.xml
 ```
 ## AutoRum
 We add in the file /etc/X11/openbox/autorun at the end of the last line the name of the command with the path of where it is and then we add an & to run in the background. In this example the command is called ladie is in the /home/pi/ directory
@@ -64,6 +64,12 @@ vim /etc/X11/openbox/autorun
 ...
 /home/pi/ladie &
 ```
+
+Another option is to download the already modified file.
+```bash
+wget https://raw.githubusercontent.com/lordbasex/custom-image-raspberry/master/openbox/autostart -O /etc/X11/openbox/autostart
+```
+
 
 ## More Doc
 
