@@ -25,7 +25,7 @@ mv /usr/local/bin/sqlcipher /usr/bin/sqlcipher
 
 ## Example C
 
-#Building your own minimal C project example
+Building your own minimal C project example
 In your SQLite_example.c put the following lines 
 
 ```bash
